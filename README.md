@@ -115,7 +115,3 @@ const removeItem = useMutation({
     ![K-003.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/42a7be0a-2649-478a-bbda-55b97a636cb1/4c912186-40ef-48c4-97b8-176e49962ad8/K-003.jpg)
     
     1. productDetail에서 mutate 수정해도 즉각적인 변화가 없어서 도대체 무슨문제지 해서 firebase 에 들어갔다가 다시 해보니 됐다…?
-    
-    1. 상품에서 옵션을 S로하여 장바구니에 추가 후 같은상품 M사이즈를 장바구니에 추가할시 S,M이 담기는것이 아닌 S -> M으로 대체만 되고 수량도 1개로 그대로입니다.. 무엇때문에 같은상품 중복추가가 되지않는것인가요??
-    
-    답: 데이터베이스에 추가하는 아이템의 키 (ref)가 [product.id](http://product.id/) 이기 때문이예요. 옵션이 다른 제품을 추가 하려면 키를 고유한 제품의 아이디가 아니라, 아이디 + 옵션 조합으로 가지고 가야 할 것 같아요
